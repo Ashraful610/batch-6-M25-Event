@@ -24,3 +24,12 @@ const makeGreenButton = document.getElementById('makeGreen')
 makeGreenButton.addEventListener('click',function(){
     document.body.style.backgroundColor = 'green'
 })
+
+// -------------------- update button
+const updateButton = document.getElementById('update-btn')
+updateButton.addEventListener('click',function(){
+    const inputField = document.getElementById('input-field')
+    const inputText = inputField.value
+    document.getElementById('title').innerText=inputText
+    inputField.value = ''
+});
