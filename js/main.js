@@ -33,3 +33,29 @@ updateButton.addEventListener('click',function(){
     document.getElementById('title').innerText=inputText
     inputField.value = ''
 });
+
+// ------------- input event ----------------
+const inputEvent = document.getElementById('input-event')
+inputEvent.addEventListener('blur', function(){
+    console.log('input event blur');
+})
+inputEvent.addEventListener('focus', function(){
+    document.body.style.backgroundColor='steelblue';
+});
+
+// const sendButton = document.getElementById('send-btn')
+// sendButton.addEventListener('mousedown', function(){
+//     console.log('mousedown');
+// });
+// const sendButton = document.getElementById('send-btn')
+// sendButton.addEventListener('mouseenter', function(){
+//     console.log('mouse enter');
+// });
+// const sendButton = document.getElementById('send-btn')
+// sendButton.addEventListener('mouseleave', function(){
+//     console.log('mouse leave');
+// });
+// const sendButton = document.getElementById('send-btn')
+// sendButton.addEventListener('mousemove', function(){
+//     console.log('mouse move');
+// });
